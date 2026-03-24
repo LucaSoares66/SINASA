@@ -1,9 +1,7 @@
-import streamlit as st
-import geopandas as gpd
-import folium
-from pathlib import Path
-from streamlit_folium import st_folium
-import os
-import s3fs
-import boto3
-import tempfile
+streamlit
+geopandas
+folium
+streamlit-folium
+boto3
+s3fs
+pyogrio
