@@ -18,7 +18,10 @@ s3 = boto3.client(
 
 fs = s3fs.S3FileSystem(
     key=st.secrets["AWS_ACCESS_KEY_ID"],
-    secret=st.secrets["AWS_SECRET_ACCESS_KEY"]
+    secret=st.secrets["AWS_SECRET_ACCESS_KEY"],
+    client_kwargs={
+        "region_name": st.secrets["AWS_DEFAULT_REGION"]
+    }
 )
 
 
