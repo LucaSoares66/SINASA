@@ -72,7 +72,7 @@ if uf_selecionada:
     colunas = carregar_colunas(uf_selecionada)
 
     coluna_municipio = None
-    for col in ["NM_MUN", "NM_MUNICIP", "NOME_MUNICIPIO", "NM_MUNIC"]:
+    for col in "NM_MUN":
         if col in colunas:
             coluna_municipio = col
             break
