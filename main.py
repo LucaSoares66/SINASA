@@ -71,11 +71,7 @@ if uf_selecionada:
     # Descobre qual coluna é município
     colunas = carregar_colunas(uf_selecionada)
 
-    coluna_municipio = None
-    for col in "NM_MUN":
-        if col in colunas:
-            coluna_municipio = col
-            break
+    coluna_municipio = "NM_MUN"
 
     if coluna_municipio is None:
         st.error("Coluna de município não encontrada no arquivo.")
